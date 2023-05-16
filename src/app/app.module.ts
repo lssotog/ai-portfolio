@@ -6,19 +6,40 @@ import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AboutSectionComponent } from './sections/about-section/about-section.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { SkillsSectionComponent } from './sections/skills-section/skills-section.component';
+import { CareerSectionComponent } from './sections/career-section/career-section.component';
+import { PortfolioSectionComponent } from './sections/portfolio-section/portfolio-section.component';
 
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutSectionComponent },
+  // { path: 'portfolio', component: HomeComponent },
+  { path: 'career', component: SkillsSectionComponent },
+  // { path: 'contact', component: HomeComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
     HomeComponent,
-    NavBarComponent
+    NavBarComponent,
+    AboutSectionComponent,
+    SkillsSectionComponent,
+    CareerSectionComponent,
+    PortfolioSectionComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    CommonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Monserrat-black";
+  font-weight: 400;
+  src: url(./assets/fonts/montserrat-black-webfont.woff2) format("woff2");
+  src: url(./assets/fonts/montserrat-black-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Monserrat-blackitalic";
+  font-weight: 100;
+  src: url(./assets/fonts/montserrat-blackitalic-webfont.woff2) format("woff2");
+  src: url(./assets/fonts/montserrat-blackitalic-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Monserrat-regular";
+  src: url(./assets/fonts/montserrat-regular-webfont.woff2) format("woff2");
+  src: url(./assets/fonts/montserrat-regular-webfont.woff2) format("woff");
+}
+
+body {
+  font-family: "Monserrat-regular", sans-serif;
+}
+
+h1 {
+  color: rgb(242, 178, 138);
+}

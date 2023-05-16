@@ -1,0 +1,17 @@
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: rgb(120, 139, 133);
+}
+
+.nav-bar a:hover {
+  color: rgb(242, 178, 138);
+}

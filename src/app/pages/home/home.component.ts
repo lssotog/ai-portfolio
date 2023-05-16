@@ -1,4 +1,5 @@
-import { Component, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { externalLinks } from 'src/app/shared/utils/constants/externalLinks';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,5 @@ import { Component, Output } from '@angular/core';
 })
 export class HomeComponent {
   label: string = 'Contact me';
+  globantLink: string = externalLinks.globant;
 }

@@ -1,59 +1,41 @@
-<header>
+<header class="header-container">
+  <img class="logo" src="../../../assets/lssg-logo.jpg" />
   <app-nav-bar></app-nav-bar>
 </header>
 <main>
-  <aside>
-    <img />
-    <img />
-    <img />
-    <img />
-    <img />
-  </aside>
-
-  <article>
-    <h1>Hi, I'm Luz Stella web developer</h1>
-    <img
-      class=""
-      src="assets/dall-e-2023-05-09.png"
-      alt="Imagen de una mujer latina, con cabello bronce, delgada y feliz. Esta imagen fue generada con la herramienta Dall-e"
-    />
-    <p>
+  <article class="article">
+    <div class="article-container">
+      <div>
+        <h2>Hi there!</h2>
+        <h1>I'm Luz Stella Soto G</h1>
+        <h2>Web UI Developer</h2>
+      </div>
+      <img
+        class="profile-photo"
+        src="../../../assets/profileph.png"
+        alt="Luz Stella's Photography"
+      />
+    </div>
+    <p class="article-paragraph-info">
       I'm a full stack developer, that love this amazing career since 2020.
-      Currently I'm working at Globant as a Web Ui developer Junior Advance.
+      Currently I'm working at
+      <a href="{{ globantLink }}" target="_blank"
+        ><img
+          class="globants-logo"
+          src="../../../assets/globant-logo.png"
+          alt="Globant's logo"
+      /></a>
+      as a Web UI developer Junior Advance.
     </p>
-    <app-button [label]="label"></app-button>
   </article>
 
-  <aside>
-    <p>luz.soto@globant.com</p>
-    <img />
-  </aside>
+  <about-section></about-section>
 
-  <section id="about">
-    <h2>01. &lt;a little about me&gt;</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-      voluptatum perspiciatis dolorum odio mollitia eaque, quaerat labore error
-      fuga ut non dolore reiciendis, omnis laborum, sapiente et! Temporibus,
-      neque! Corrupti!
-    </p>
-    <h2>&lt;/a little about me&gt;</h2>
-  </section>
+  <skills-section></skills-section>
 
-  <section>
-    <h2>02. &lt;my skills&gt;</h2>
-    <section>
-      <p>Javascript</p>
-      <p>Javascript</p>
-      <p>Javascript</p>
-      <p>Javascript</p>
-    </section>
-    <h2>&lt;/my skills&gt;</h2>
-  </section>
+  <portfolio-section></portfolio-section>
 
-  <section id="portfolio">
-    <h2>03. &lt;my portfolio&gt;</h2>
-    <p>A small gallery of all the projects that I have made.</p>
-    <article></article>
-  </section>
+  <career-section></career-section>
+
+  <footer></footer>
 </main>
