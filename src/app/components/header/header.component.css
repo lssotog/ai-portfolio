@@ -1,16 +1,17 @@
-.logo {
-  margin-left: 40px;
-}
-
 .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
+  position: sticky;
+  top: 0px;
   width: 100%;
-  z-index: 2000;
+  /* z-index: 100; */
   background: #fff;
   transition: all 0.5s ease;
-  margin: 0px;
+  box-shadow: -1px 3px 8px 1px #eaba76cf;
+}
+
+.logo {
+  margin-left: 40px;
 }

@@ -1,15 +1,18 @@
 <section id="about" class="container-about">
-  <a (click)="returnAboutSectionNav()">
+  <a (click)="returnAboutSectionNav()" class="container-about__header">
     <h2>A little about me</h2>
   </a>
 
   <p>
-    I'm a software developer with more than 2 years of experience Design
-    system...
+    I'm a software developer with 3 years of experience developing front and
+    backend projects using languages such as JS, React JS and Storybook that
+    includes responsive web design, consuming and creating REST API’s in NodeJS,
+    using agile methodologies like SCRUM.
   </p>
-
-  <i>{{ quoteResponse.content }}</i>
-  <p>{{ quoteResponse.author }}</p>
+  <div class="quote">
+    <i class="quote__content">"{{ quoteResponse.content }}"</i>
+    <p class="quote__author">{{ quoteResponse.author }}</p>
+  </div>
 
   <p>Reading books like</p>
   <p>
@@ -17,17 +20,27 @@
     PENDIENTES POR LEER
   </p>
   <p>CONSUMIR API LIBROS</p>
-  <h3>COMENTAR DE LOS VOLUNTARIADOS</h3>
-  <p>
-    In 2020 I was the mentor of Globant's "Women in the Cloud" programming
-    seedbed program, which aimed to approach and include Colombian girls and
-    adolescents in vulnerable situations into the world of technology,
-    specifically web programming. Our goal was to inspire and plant the seed for
-    more women to join IT.
-  </p>
-  <iframe
-    width="420"
-    height="345"
-    src="https://www.youtube.com/watch?v=WGRQVAW216I"
-  ></iframe>
+
+  <article>
+    <h3>Volunteering</h3>
+    <article class="volunteering-container">
+      <p class="volunteering-paragraph">
+        In 2020 I was the mentor of Globant's "Women in the Cloud" programming
+        seedbed program, which aimed to approach and include Colombian girls and
+        adolescents in vulnerable situations into the world of technology,
+        specifically web programming. Our goal was to inspire and plant the seed
+        for more women to join IT.
+      </p>
+      <aside class="volunteering-video">
+        <iframe
+          width="320"
+          height="245"
+          src="https://www.youtube.com/embed/WGRQVAW216I"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </aside>
+    </article>
+  </article>
 </section>

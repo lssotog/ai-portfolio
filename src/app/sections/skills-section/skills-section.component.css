@@ -1,0 +1,26 @@
+.skills-container {
+  margin: 0px 55px 50px 55px;
+}
+
+.skills-container__table {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-container__table__name {
+  width: 200px;
+  height: 40px;
+  color: rgb(126, 150, 129);
+  font-size: 20px;
+}
+
+.skills-container__table__level {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(255, 235, 222);
+  text-align: center;
+  margin: 0px 10px 10px 0px;
+  color: rgb(126, 150, 129);
+  font-size: 20px;
+}

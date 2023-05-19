@@ -22,8 +22,15 @@
 
 body {
   font-family: "Monserrat-regular", sans-serif;
+  margin: 0px;
 }
 
 h1 {
+  font-size: 3.3rem;
   color: rgb(242, 178, 138);
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(112, 141, 134);
 }

@@ -1,7 +1,15 @@
-<section>
+<section class="skills-container">
   <h2>Skills</h2>
-  <div *ngFor="let skill of hardSkills">
-    <p>{{ skill.name }}</p>
-    <p>{{ skill.level }}</p>
+  <div *ngFor="let skill of hardSkills" class="skills-container__table">
+    <div class="skills-container__table__name">
+      <p>{{ skill.name }}</p>
+    </div>
+    <div class="skills-container__table__level">
+      <p>{{ skill.level }}</p>
+    </div>
+    <div class="star-five"></div>
+    <i class="fa-solid fa-star fa-2x"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
   </div>
 </section>

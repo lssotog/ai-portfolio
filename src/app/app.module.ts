@@ -13,13 +13,18 @@ import { CommonModule } from '@angular/common';
 import { SkillsSectionComponent } from './sections/skills-section/skills-section.component';
 import { CareerSectionComponent } from './sections/career-section/career-section.component';
 import { PortfolioSectionComponent } from './sections/portfolio-section/portfolio-section.component';
+import { IntroSectionComponent } from './sections/intro-section/intro-section.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ContactMeComponent } from './sections/contact-me/contact-me.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutSectionComponent },
-  // { path: 'portfolio', component: HomeComponent },
+  { path: 'portfolio', component: PortfolioSectionComponent },
+  { path: 'portfolio', component: SkillsSectionComponent },
   { path: 'career', component: SkillsSectionComponent },
-  // { path: 'contact', component: HomeComponent },
+  { path: 'contact', component: ContactMeComponent },
 ];
 @NgModule({
   declarations: [
@@ -31,6 +36,10 @@ const appRoutes: Routes = [
     SkillsSectionComponent,
     CareerSectionComponent,
     PortfolioSectionComponent,
+    IntroSectionComponent,
+    FooterComponent,
+    HeaderComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,

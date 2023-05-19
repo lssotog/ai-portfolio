@@ -4,7 +4,7 @@ export const hardSkills: HardSkills[] = [
   {
     name: 'HTML',
     src: '',
-    shorterName: 'JS',
+    shorterName: 'html',
     role: 'developer',
     development: 'FrontEnd',
     level: 5,

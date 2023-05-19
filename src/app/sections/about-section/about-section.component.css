@@ -1,4 +1,38 @@
 .container-about {
   background-color: rgb(255, 235, 222);
   color: rgb(126, 150, 129);
+  padding: 0px 55px 40px 55px;
+  margin-bottom: 50px;
+}
+
+.container-about__header {
+  margin: 0px 40px;
+}
+
+.quote {
+  width: 300px;
+}
+
+.quote__content {
+  color: rgb(112, 141, 134);
+  font-weight: 200;
+}
+
+.quote__author {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.volunteering-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+}
+
+.volunteering-paragraph {
+  width: 500px;
+}
+
+.volunteering-video {
+  margin-left: 150px;
 }

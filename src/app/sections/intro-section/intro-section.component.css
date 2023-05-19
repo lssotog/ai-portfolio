@@ -1,0 +1,41 @@
+/* * {
+  outline: 1px solid gray;
+} */
+
+.article {
+  /* margin-top: 50px; */
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-container {
+  display: flex;
+  align-items: center;
+  margin: 0px 55px;
+}
+
+.article-container__info {
+  width: 70%;
+  line-height: 20px;
+}
+
+.profile-photo {
+  height: 300px;
+}
+
+.article-paragraph-info {
+  color: rgb(126, 150, 129);
+  display: inline-block;
+  font-size: 20px;
+}
+
+.globants-logo {
+  height: 30px;
+}
+
+.globants-logo img {
+  height: inherit;
+}
