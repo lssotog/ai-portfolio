@@ -11,16 +11,18 @@
 
 .quote {
   width: 300px;
+  color: rgb(255 16 141);
+  margin: 70px 0px 70px 800px;
 }
 
 .quote__content {
-  color: rgb(112, 141, 134);
   font-weight: 200;
 }
 
 .quote__author {
   display: flex;
   justify-content: flex-end;
+  color: rgb(255 102 234);
 }
 
 .volunteering-container {

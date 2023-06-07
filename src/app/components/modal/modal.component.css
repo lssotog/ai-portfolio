@@ -1,0 +1,38 @@
+.modal {
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  background: #00000054;
+  display: flex;
+  transition: transform 0.5s;
+  transform: translate(100%);
+}
+
+.modal:target {
+  transform: translate(0);
+}
+
+.modal__container {
+  position: relative;
+  width: 80%;
+  height: 60%;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.body-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vh;
+}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,14 +18,16 @@ import { IntroSectionComponent } from './sections/intro-section/intro-section.co
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContactMeComponent } from './sections/contact-me/contact-me.component';
+import { FormComponent } from './components/form/form.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { CardComponent } from './components/card/card.component';
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutSectionComponent },
-  { path: 'portfolio', component: PortfolioSectionComponent },
-  { path: 'portfolio', component: SkillsSectionComponent },
-  { path: 'career', component: SkillsSectionComponent },
-  { path: 'contact', component: ContactMeComponent },
+  { path: '#home', component: HomeComponent },
+  { path: '#about', component: AboutSectionComponent },
+  { path: '#portfolio', component: PortfolioSectionComponent },
+  { path: '#career', component: SkillsSectionComponent },
+  { path: '#contact', component: ContactMeComponent },
 ];
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ const appRoutes: Routes = [
     FooterComponent,
     HeaderComponent,
     ContactMeComponent,
+    FormComponent,
+    ModalComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +53,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
     CommonModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

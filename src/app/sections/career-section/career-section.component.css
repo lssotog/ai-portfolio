@@ -1,3 +1,16 @@
 .career-container {
   margin: 0px 55px;
 }
+
+.career-container-ul {
+  padding-left: 0px;
+}
+
+.career-container-ul li {
+  margin-top: 5px;
+  margin-left: 14px;
+}
+
+.career-container-ul p {
+  text-decoration: underline;
+}

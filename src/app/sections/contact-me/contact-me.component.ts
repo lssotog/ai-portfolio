@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-contact-me',
+  selector: 'contact-me-section',
   templateUrl: './contact-me.component.html',
-  styleUrls: ['./contact-me.component.css']
+  styleUrls: ['./contact-me.component.css'],
 })
 export class ContactMeComponent {
+  modalSwitch!: boolean;
 
+  openModal() {
+    this.modalSwitch = true;
+  }
 }
